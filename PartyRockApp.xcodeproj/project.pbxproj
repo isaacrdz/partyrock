@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		14881EFD1F4A9C7000F4BBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14881EFC1F4A9C7000F4BBC4 /* AppDelegate.swift */; };
-		14881EFF1F4A9C7000F4BBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14881EFE1F4A9C7000F4BBC4 /* ViewController.swift */; };
+		14881EFF1F4A9C7000F4BBC4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14881EFE1F4A9C7000F4BBC4 /* MainVC.swift */; };
 		14881F021F4A9C7000F4BBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14881F001F4A9C7000F4BBC4 /* Main.storyboard */; };
 		14881F041F4A9C7000F4BBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14881F031F4A9C7000F4BBC4 /* Assets.xcassets */; };
 		14881F071F4A9C7000F4BBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14881F051F4A9C7000F4BBC4 /* LaunchScreen.storyboard */; };
+		14E4C33D1F4BD637005B9876 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14E4C33C1F4BD637005B9876 /* still time.ttf */; };
+		14E4C3411F54EB11005B9876 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4C3401F54EB11005B9876 /* VideoVC.swift */; };
+		14E4C3431F551354005B9876 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4C3421F551354005B9876 /* PartyCell.swift */; };
+		14E4C3451F551699005B9876 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4C3441F551699005B9876 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14881EF91F4A9C7000F4BBC4 /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14881EFC1F4A9C7000F4BBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14881EFE1F4A9C7000F4BBC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14881EFE1F4A9C7000F4BBC4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		14881F011F4A9C7000F4BBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14881F031F4A9C7000F4BBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14881F061F4A9C7000F4BBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14881F081F4A9C7000F4BBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E4C33C1F4BD637005B9876 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		14E4C3401F54EB11005B9876 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		14E4C3421F551354005B9876 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		14E4C3441F551699005B9876 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		14881EFB1F4A9C7000F4BBC4 /* PartyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				14E4C33E1F4BD64E005B9876 /* Files */,
+				14E4C33B1F4B0BB9005B9876 /* Model */,
+				14E4C33A1F4B0BB1005B9876 /* View */,
+				14E4C3391F4B0B90005B9876 /* Controller */,
 				14881EFC1F4A9C7000F4BBC4 /* AppDelegate.swift */,
-				14881EFE1F4A9C7000F4BBC4 /* ViewController.swift */,
+				14881F051F4A9C7000F4BBC4 /* LaunchScreen.storyboard */,
 				14881F001F4A9C7000F4BBC4 /* Main.storyboard */,
 				14881F031F4A9C7000F4BBC4 /* Assets.xcassets */,
-				14881F051F4A9C7000F4BBC4 /* LaunchScreen.storyboard */,
 				14881F081F4A9C7000F4BBC4 /* Info.plist */,
 			);
 			path = PartyRockApp;
+			sourceTree = "<group>";
+		};
+		14E4C3391F4B0B90005B9876 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14881EFE1F4A9C7000F4BBC4 /* MainVC.swift */,
+				14E4C3401F54EB11005B9876 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		14E4C33A1F4B0BB1005B9876 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14E4C3421F551354005B9876 /* PartyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		14E4C33B1F4B0BB9005B9876 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14E4C3441F551699005B9876 /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		14E4C33E1F4BD64E005B9876 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				14E4C33C1F4BD637005B9876 /* still time.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14881F071F4A9C7000F4BBC4 /* LaunchScreen.storyboard in Resources */,
+				14E4C33D1F4BD637005B9876 /* still time.ttf in Resources */,
 				14881F041F4A9C7000F4BBC4 /* Assets.xcassets in Resources */,
 				14881F021F4A9C7000F4BBC4 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14881EFF1F4A9C7000F4BBC4 /* ViewController.swift in Sources */,
+				14E4C3411F54EB11005B9876 /* VideoVC.swift in Sources */,
+				14881EFF1F4A9C7000F4BBC4 /* MainVC.swift in Sources */,
+				14E4C3451F551699005B9876 /* PartyRock.swift in Sources */,
+				14E4C3431F551354005B9876 /* PartyCell.swift in Sources */,
 				14881EFD1F4A9C7000F4BBC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +352,7 @@
 				14881F0D1F4A9C7000F4BBC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
